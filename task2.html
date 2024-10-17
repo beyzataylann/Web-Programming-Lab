@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Dikey Açılır Menü</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      position: relative;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 200px;
+    }
+
+    nav ul li {
+      background-color: #005c4f;
+      margin: 5px 0;
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: #007d67;
+    }
+
+    .tablo {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 200px;
+      background-color: #0e6c3d;
+      border: 1px solid #005c4f;
+      width: 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .tablo table {
+      width: 100%;
+
+    }
+
+    .tablo td {
+      border: 1px solid #005c4f;
+      padding: 10px;
+      text-align: center;
+    }
+
+
+    nav ul li:hover .tablo, .tablo:hover {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+<nav>
+  <ul>
+    <li>
+      <a href="https://bil-muhendislik.omu.edu.tr/tr">Ana Sayfa</a>
+    </li>
+    <li>
+      <a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda">Hakkımızda</a>
+
+      <div class="tablo">
+        <table>
+          <tr>
+            <td><a href = "https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/bolumumuz">Bölümümüz</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/yonetim">Yönetim</a></td>
+          </tr>
+          <tr>
+            <td><a href ="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar">Komisyonlar</a></td>
+          </tr>
+        </table>
+      </div>
+    </li>
+
+    <li>
+      <a href="#">Personel</a>
+      <div class="tablo">
+        <table>
+          <tr>
+            <td><a href = "https://bil-muhendislik.omu.edu.tr/tr/personel/ogretim-uyeleri">Öğretim Üyeleri</a></td>
+          </tr>
+          <tr>
+            <td><a href = "https://bil-muhendislik.omu.edu.tr/tr/personel/arastirma-gorevlileri">Araştırma Görevlileri</a></td>
+          </tr>
+        </table>
+      </div>
+    </li>
+
+    <li><a href="#">Eğitim</a>
+
+      <div class="tablo">
+        <table>
+          <tr>
+            <td><a href = "https://bil-muhendislik.omu.edu.tr/tr/egitim/lisans">Lisans</a></td>
+          </tr>
+          <tr>
+            <td><a href = "https://bil-muhendislik.omu.edu.tr/tr/egitim/yueksek-lisans">Yüksek Lisans</a></td>
+          </tr>
+          <tr>
+            <td><a href = "https://bil-muhendislik.omu.edu.tr/tr/egitim/doktora-hesaplamali-bilimler">Doktora</a></td>
+          </tr>
+          <tr>
+            <td><a href = "https://bil-muhendislik.omu.edu.tr/tr/egitim/laboratuvarlar">Laboratuvarlar</a></td>
+          </tr>
+        </table>
+      </div>
+    </li>
+
+    <li><a href="https://unikys.omu.edu.tr/tr/feedbacks/new">İletişim</a></li>
+  </ul>
+</nav>
+</body>
+</html>

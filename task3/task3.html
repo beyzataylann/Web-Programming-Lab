@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MON AMOUR</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("../img/resim.jpg");
+      background-size: cover;
+      background-position: center;
+      top: 0px;
+      height: 150vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background-color: #0e486c;
+      margin-top: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 10px;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background-color: #0e486c;
+    }
+
+    nav ul li .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #0e486c;
+      z-index: 1;
+    }
+
+    nav ul li:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown {
+      flex-direction: column;
+    }
+
+    .dropdown li {
+      width: 150px;
+    }
+
+    .dropdown li a {
+      padding: 10px 15px;
+    }
+
+    .dropdown li a:hover {
+      background-color: #0e486c;
+    }
+
+    .footer {
+      background-color: #1e0707;
+      color: #fff;
+      text-align: center;
+      margin-top: auto;
+      width: 100%;
+    }
+
+    .carousel {
+      position: relative;
+      margin: auto;
+      max-width: 10000px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100vh;
+      max-height: 800px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(255, 255, 255, 0.5); /
+      border-radius: 50%;
+    }
+
+    .carousel-control-prev-icon:hover,
+    .carousel-control-next-icon:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .jumbotron {
+      background-color: #cccccc;
+      padding: 15px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+<div class="jumbotron">
+  <h1>MON AMOUR PATISSERİE</h1><br>
+
+</div>
+<div class="jumbotron">
+<h6>Günün Her Anında Tatlı Bir Mola!</h6><br>
+
+</div>
+
+<nav>
+  <ul>
+    <li><a href="task3.html">Ana Sayfa</a></li>
+    <li><a href="#">Kurumsal</a>
+      <ul class="dropdown">
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">Kariyer</a></li>
+        <li><a href="#">Şubelerimiz</a></li>
+      </ul>
+    </li>
+    <li><a href="menu.html">Menülerimiz</a></li>
+    <li><a href="#">Hizmetler</a></li>
+    <li><a href="giris.html">Üye Ol/Giriş Yap</a></li>
+  </ul>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../img/tatli.jpeg" class="d-block w-100" alt="1">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/tatli1.jpeg" class="d-block w-100" alt="2">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/tatli2.jpeg" class="d-block w-100" alt="3">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Önceki</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Sonraki</span>
+  </a>
+</div>
+
+<footer class="footer">
+  <p>© 2024 MON AMOUR PATISSERİE. Tüm Hakları Saklıdır.</p>
+  <p><a href="mailto:info@monamourpatisserie.com" class="footer">info@monamourpatisserie.com</a></p>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
